@@ -22,7 +22,8 @@ import {
 import { calculateDiscount, calculateShippingFee } from '../utils/currency.ts';
 
 // Ensure data directory exists
-const dataDir = path.resolve(process.cwd(), 'data');
+const isVercel = Boolean(process.env.VERCEL);
+const dataDir = isVercel ? '/tmp' : path.resolve(process.cwd(), 'data');
 if (!existsSync(dataDir)) {
   mkdirSync(dataDir, { recursive: true });
 }
