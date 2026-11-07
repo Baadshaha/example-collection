@@ -1,0 +1,6 @@
+{
+  "name": "Krushna Collection",
+  "description": "Premier Indian ethnic & contemporary clothing store featuring handcrafted sarees, kurtas, lehengas, and festive wear with secure checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
